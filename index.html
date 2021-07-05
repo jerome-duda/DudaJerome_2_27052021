@@ -2,13 +2,15 @@
 <html>
     <head>
       <meta charset="utf-8" />
+      <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
       <title> Réservia </title>
     </head>
     <body>
-      <div id=corps>
-        <header>
+        <header class="header">
          <div id=titre1>
-          <h1> Réservia </h1>
+          <a href=#>
+            <img src="images/logo/Reservia.svg" alt="reservia">
+          </a>
          </div>
            <nav>
              <ul>
@@ -17,24 +19,109 @@
                <li><a href="#">S'inscrire</a></li>
              </ul>
            </nav>
-             <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-             <h5>En plein centre ville ou en pleine nature</h5>
-             <form method="post" action="traitement.php">
-               <p>
-                 <input type="text" name="recherche" id="recherche" placeholder="Marseille,France"/>
-                 <label for="recherche">Recherche</label>
-               </p>
-             </form>
-             <p>Filtres
-               <ul>
-                 <li>Economique</li>
-                 <li>Familial</li>
-                 <li>Romantique</li>
-                 <li>Animaux autorisés</li>
-               </ul>
-             </p>
-             <h5>plus de 500 logements sont disponibles dasn cette ville</h5>
         </header>
+        <div id="body">
+          <section class="ZoneRecherche">
+            <header>
+             <h1>Trouver votre hébergement pour des vacances de rêve</h2>
+             <p>En plein centre ville ou en pleine nature</p>
+             </header>
+             <form method="post" action="traitement.php">
+                 <input type="search"  placeholder="Marseille,France"/>
+                 <button>
+                   <p class="recherche" aria-hidden="true">
+                     <span class="boutonrecherche">Rechercher</span>
+                   </p>
+                 </button>
+             </form>
+             <div id="Filtres">
+             <h2> Filtres</h2> 
+               <div><i class="fas fa-money-bill-wave" aria-hidden="true"></i>Economique</div>
+               <div><i class="fas fa-child" aria-hidden="true"></i>Familial</div>
+               <div><i class="fas fa-heart" aria-hidden="true"></i>Romantique</div>
+               <div><i class="fas fa-dog" aria-hidden="true"></i>Animaux autorisé</div>
+              </div>
+              <div class="resultats">
+                <div class="iconeresultats">
+                  <i class="fas fa-info" aria-hidden="true"></i>
+                </div>
+                <p class="texteResultats">plus de 500 logements sont disponibles dans cette ville</p>
+              </div>
+            </section>
+            <section class="Hébergements">
+              <div class="BrancheHébergements">
+                <header>
+                  <h2>Hébergements à Marseille</h2>
+              </header>
+              <article>
+                <a href="#">
+                    <figure>
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec un lit superposé et une fenêtre donnant vue sur la  ville.">
+                    </figure>
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <strong>25€</strong></p>
+                    <ul>
+                        <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                        <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                        <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                        <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                        <li><i data-active="false" class="fas fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                </a>
+            </article>
+            <article>
+              <a href="#">
+                  <figure>
+                      <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre grise avec deux lits simples et une fenêtre.">  
+                  </figure>
+                  <h3>Hôtel du port</h3>
+                  <p>Nuit à partir de <strong>52€</strong></p>
+                  <ul>
+                      <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                      <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                      <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                      <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                      <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                  </ul>
+              </a>
+          </article>
+          <article>
+            <a href="#">
+                <figure>
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre avec lit double, armoire et fenêtre.">
+                </figure>
+                <h3>Hôtel Les mouettes</h3>
+                <p>Nuit à partir de <strong>76€</strong></p>
+                <ul>
+                    <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                    <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                    <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                    <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+                    <li><i data-active="false" class="fas fa-star" aria-hidden="true"></i></li>
+                </ul>  
+            </a>
+        </article>
+        <article>
+          <a href="#">
+            <figure>
+              <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre avec lits double théme de la mer">
+            </figure>
+            <h3>Hôtel de la mer</h3>
+            <p>Nuit a partir de<strong>46€</strong></p>
+            <ul>
+              <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+              <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+              <li><i data-active="true" class="fas fa-star" aria-hidden="true"></i></li>
+              <li><i data-active="false" class="fas fa-star" aria-hidden="true"></i></li>
+              <li><i data-active="false" class="fas fa-star" aria-hidden="true"></i></li>
+            </ul>
+          </a>
+        </article>
+              </div>
+            </section>
+
+      
+        
 
 
 
