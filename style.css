@@ -1,1 +1,10 @@
-style.css
+.hebergements-container {
+    display: flex;
+}
+.notation i[data-active="true"] {
+    color: yellow;
+ }
+ 
+.notation i[data-active="false"] {
+    color: grey;
+ }
