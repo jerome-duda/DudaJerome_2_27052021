@@ -1,6 +1,10 @@
 html {
     font-family: 'raleway', sans-serif;
 }
+body a {
+text-decoration: none;
+color: black;
+}
 /* header */
 .header {
     grid-template-columns: auto 1fr auto auto;
@@ -115,6 +119,9 @@ html {
 .hebergements-container a {
     text-decoration: none;
 }
+.hebergements-container2 a {
+    text-decoration: none;
+}
 .hebergement {
     background-color: white;
                 padding: 0.375em;
@@ -152,27 +159,27 @@ html {
 .hebergements-container2 ul {
     margin: 0 0.75rem 0.25rem 0.75rem;
 }
-..hebergements-container2 {
+.hebergements-container2 {
     padding: 2rem;
     row-gap: 2rem;
     display: grid;
     align-items: start;
     grid-template-rows: auto repeat(3,1fr);
 }
-..hebergements-container2 h2 {
+.hebergements-container2 h2 {
         margin: 0;
         display: flex;
         justify-content: space-between;
         }
 
-..hebergements-container2 a {
+.hebergements-container2 a {
             display: flex;
             align-items: stretch;
             height: 100%;
             overflow: auto;
         }
 
-..hebergements-container2 figure {
+.hebergements-container2 figure {
             margin: 0;
             position: relative;
             min-height: 100%;
@@ -181,7 +188,7 @@ html {
             max-width: 33%;
         }
 
-..hebergements-container2 img {
+.hebergements-container2 img {
             border-radius: 1rem 0 0 1rem;
             position: absolute;
             width: 100%;
@@ -321,12 +328,13 @@ html {
     display: block;
     list-style-type: none;
     color: black;
+    padding: 0;
 }
 .footer ul :hover {
     color:black
 }
 
 .footer ul li {
-    margin: 1rem 0;
     list-style: none;
+    margin-bottom: 1rem;
 }
