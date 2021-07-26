@@ -9,6 +9,7 @@ body{
     max-width: 1400px;
 margin-left: auto;
 margin-right: auto;
+padding: 0 40px 0 40px;
 }
 /* header */
 .header {
@@ -29,6 +30,7 @@ margin-right: auto;
     width: 100%;
     text-align: center;
     justify-content: flex-end;
+    align-content: space-between;
 }
 
 .header li {
@@ -190,11 +192,13 @@ margin-right: auto;
 }
 .branche-hebergements{
     flex: 2;
-    margin: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .hebergements-populaire {
     flex: 1;
-    margin:1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .branche-hebergements .hebergement {
 width: 250px;
