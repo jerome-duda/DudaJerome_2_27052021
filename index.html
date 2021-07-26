@@ -2,6 +2,7 @@
 <html>
 <head>
    <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width" />
    <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
    <title>Réservia</title>
    <link href="style.css" rel="stylesheet">
@@ -15,9 +16,9 @@
    </div>
    <nav>
       <ul class="navigateur">
-         <li><a href="#hebergements">Hébergements</a></li>
+         <li id="bouton-hebergement" style="color:#0065FC;"><a href="#hebergements">Hébergements</a></li>
          <li><a href="#activites">Activités</a></li>
-         <li><a href="#">S'inscrire</a></li>
+         <li id="inscription" style="color:#0065FC;"><a href="#">S'inscrire</a></li>
       </ul>
    </nav>
 </header>
@@ -25,12 +26,14 @@
    <section id="zone-recherche">
       <h1>Trouver votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
-      <form>
-         <input type="search" placeholder="Marseille, France"/>
-         <button>
-            <a href="#" class="recherche">
-               Rechercher
-            </a>
+      <form class="search">
+         <div class="icon-container">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+         </div>
+         <input type="search" placeholder="Marseille, France" class="searchbox">
+         <button class="submit">
+            <span>Rechercher</span>
+            <i class="fas fa-search" aria-hidden="true"></i>
          </button>
       </form>
       <div id="filtres">
@@ -177,7 +180,7 @@
       <aside class="hebergements-populaire">
          <div class="hebergements-container2">
          <h2>Les plus populaires <i class="fas fa-chart-line" aria-hidden="true"></i></h2>
-         <div class="hebergement">
+         <div class="hebergementpop">
             <a href="#">
                <figure>
                   <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -197,7 +200,7 @@
                </div>
             </a>
          </div>
-         <div class="hebergement">
+         <div class="hebergementpop">
             <a href="#">
                <figure>
                   <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -217,7 +220,7 @@
                </div>
             </a>
          </div>
-         <div class="hebergement">
+         <div class="hebergementpop">
             <a href="#">
                <figure>
                   <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
