@@ -192,12 +192,12 @@ padding: 0 40px 0 40px;
 }
 .branche-hebergements{
     flex: 2;
-    margin-left: 1em;
+    margin-top: 1em;
     margin-right: 1em;
 }
 .hebergements-populaire {
     flex: 1;
-    margin-left: 1em;
+    margin-top: 1em;
     margin-right: 1em;
 }
 .branche-hebergements .hebergement {
