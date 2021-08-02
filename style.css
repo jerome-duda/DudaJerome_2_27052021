@@ -451,22 +451,50 @@ height: 200px;
         padding: 1em;
         width: auto;
         border-bottom: none;
+        grid-area: inscription;
     }
-    .navigateur{
+    #inscription a{
+        border-bottom: none;
+    }
+    .header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "hosting activity";
-
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "logo . inscription"
+            "navbar navbar navbar";
+        position: relative;
+    }
+    .header nav a {
+        display: inline-block;
+        border-bottom: 3px #f2f2f2 solid;
+        width: 100%;
+    }
+    .header nav {
+        grid-area: navbar;
+    }
+    #logo{
+        grid-area: logo;
+    }
+    .header nav a[data-active=true] {
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
     }
     #bouton-hebergement{
-        grid-area: hosting;
-
+        border-bottom: 3px #0065FC solid;
     }
-    #bouton-activite{
-        grid-area: activity;
 
+    .header nav a:hover {
+        border-top: none;
     }
+    .header li {
+        width: 50%;
+        padding: 0;
+    }
+    .header ul{
+        padding: 0;
+    }
+
+
     .resultats{
         padding: 20px 10px 10px 10px 
           
@@ -570,6 +598,12 @@ height: 200px;
     .footer {
         flex-direction: column;
         max-width: 387px;
+    }
+    .bouton-recherche {
+        display: none;
+    }
+    .search .submit i{
+        display: inline-block;
     }
 }
 
