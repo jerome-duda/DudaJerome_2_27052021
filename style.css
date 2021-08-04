@@ -464,10 +464,16 @@ height: 200px;
             "navbar navbar navbar";
         position: relative;
     }
-    .header nav a {
+    .header nav li[data-active="true"] {
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
+
+    }
+    .header nav li {
         display: inline-block;
         border-bottom: 3px #f2f2f2 solid;
         width: 100%;
+        padding: 1em 0;
     }
     .header nav {
         grid-area: navbar;
@@ -475,13 +481,8 @@ height: 200px;
     #logo{
         grid-area: logo;
     }
-    .header nav a[data-active=true] {
-        border-bottom: 3px #0065FC solid;
-        border-top: none;
-    }
-    #bouton-hebergement{
-        border-bottom: 3px #0065FC solid;
-    }
+    
+    
 
     .header nav a:hover {
         border-top: none;
@@ -499,14 +500,24 @@ height: 200px;
         padding: 20px 10px 10px 10px 
           
     }
+    .search .submit {
+        width: 75px
+    }
     #filtres{
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         width: 100%;
+        flex-wrap: wrap;
 
     }
     .filtre{
         margin-top: 10px;
+    }
+    .resultats{
+        display: flex;
+    }
+    .resultats .icon-container2{
+        margin-right: 0.500em;
     }
     #hebergements {
         flex-direction: column-reverse;
